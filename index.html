@@ -1,11 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rajesh Kanna - ServiceNow Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
 </head>
+
 <body>
-    <h1>Rajesh</h1>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">RK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Engagement Meter -->
+    <div class="engagement-meter">
+        <div class="engagement-circle">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(98, 216, 78, 0.2)" stroke-width="5" />
+                <circle id="progressCircle" cx="50" cy="50" r="42" fill="none" stroke="var(--servicenow-green)"
+                    stroke-width="5" stroke-dasharray="264" stroke-dashoffset="264" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="engagement-text" id="engagementText">0%</div>
+        <div class="engagement-label">Explored</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="hero-title">RAJESH KANNA V</h1>
+                    <h2 class="hero-subtitle glow-text">ServiceNow Developer</h2>
+                    <p class="hero-description">
+                        Transforming business operations through <strong>intelligent automation</strong> and
+                        <strong>seamless integrations</strong>. Specialized in ITSM, CSM, and cutting-edge ServiceNow
+                        solutions.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#projects" class="btn btn-custom-primary">
+                            <i class="fas fa-code me-2"></i>View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-custom-secondary">
+                            <i class="fas fa-envelope me-2"></i>Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="profile-container">
+                        <div class="profile-outer-ring"></div>
+                        <div class="profile-inner-ring"></div>
+                        <div class="profile-image">
+                            <img src="/Untitled design.png" alt="Rajesh Kanna">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Building Tomorrow's Solutions Today</p>
+
+            <!-- Stats Dashboard -->
+            <div class="stats-dashboard" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-md-3 col-6 mb-4 mb-md-0">
+                        <div class="stat-item">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label">Months Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4 mb-md-0">
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">15K+</div>
+                            <div class="stat-label">Lines of Code</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ServiceNow Showcase -->
+            <div class="servicenow-showcase" data-aos="fade-up">
+                <h3>Powered by ServiceNow</h3>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                        <div class="logo-card">
+                            <img src="servicenow3.png" alt="ServiceNow Logo">
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                        <div class="logo-card">
+                            <img src="/servicenow1.jpg" alt="ServiceNow Green Logo">
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                        <div class="logo-card">
+                            <img src="Servicenow4.png" alt="ServiceNow Brand">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p style="font-size: 1.2rem; line-height: 2; color: var(--gray-text);">
+                        I'm a passionate ServiceNow Developer with <strong style="color: var(--servicenow-green);">9
+                            months of hands-on experience</strong> at <strong
+                            style="color: var(--servicenow-green);">FeOS Technologies</strong>. My journey began with 3
+                        months of intensive self-learning and CSA preparation, which laid a strong foundation for my
+                        career.
+                    </p>
+                    <p style="font-size: 1.2rem; line-height: 2; color: var(--gray-text);">
+                        I specialize in <strong style="color: var(--servicenow-green);">ITSM, CSM, SecOps,</strong> and
+                        <strong style="color: var(--servicenow-green);">Service Catalog</strong>, delivering intelligent
+                        automation solutions that transform business operations. My expertise spans across workflows,
+                        integrations, scripting, Now Assist, and RPA.
+                    </p>
+                    <p style="font-size: 1.2rem; line-height: 2; color: var(--gray-text);">
+                        From designing complex e-Bonding architectures to building AI-powered skill kits, I focus on
+                        creating solutions that are both efficient and scalable.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Skills -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server me-2"></i>ServiceNow Modules</h3>
+                        <div>
+                            <span class="skill-tag">ITSM</span>
+                            <span class="skill-tag">CSM</span>
+                            <span class="skill-tag">SecOps</span>
+                            <span class="skill-tag">Now Assist</span>
+                            <span class="skill-tag">Virtual Agent</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code me-2"></i>Technical Expertise</h3>
+                        <div>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">OAuth 2.0</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cogs me-2"></i>Additional Expertise</h3>
+                        <div>
+                            <span class="skill-tag">E-Bonding</span>
+                            <span class="skill-tag">Service Catalog</span>
+                            <span class="skill-tag">Flow Designer</span>
+                            <span class="skill-tag">RPA</span>
+                            <span class="skill-tag">ATF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Real-World Solutions & Innovations</p>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Intesa - eBonding</h3>
+                        <div class="project-module">IT Service Management</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Designed secure bi-directional e-Bonding
+                            architecture between two ServiceNow instances with OAuth 2.0 and REST APIs for real-time
+                            data synchronization.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">OAuth 2.0</span>
+                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">Integration</span>
+                            <span class="project-tag">E-Bonding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Dynamic Role Assignment</h3>
+                        <div class="project-module">IT Service Management</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Developed catalog item for time-bound role requests
+                            with automated assignment and expiration using Flow Designer and Schedule Module.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">Flow Designer</span>
+                            <span class="project-tag">Catalog</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Now Assist Skill Kit</h3>
+                        <div class="project-module">Wells Fargo - ITSM</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Designed customized Now Assist prompts and
+                            developed skill kits with ATF test suites for automated regression testing.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">Now Assist</span>
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">ATF</span>
+                            <span class="project-tag">Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PDF Automation</h3>
+                        <div class="project-module">Customer Service Management</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Automated PDF generation and attachment workflow
+                            using Flow Designer for case closure documentation.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">Flow Designer</span>
+                            <span class="project-tag">PDF</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">CSM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3>Record Producer</h3>
+                        <div class="project-module">Starbucks - CSM</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Created Record Producers with field mappings,
+                            client scripts, and UI policies for enhanced catalog experience.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">Catalog</span>
+                            <span class="project-tag">Client Scripts</span>
+                            <span class="project-tag">UI Policy</span>
+                            <span class="project-tag">Notifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>RPA Integration</h3>
+                        <div class="project-module">City Union Bank - CSM</div>
+                        <p style="color: #b0b0b0; line-height: 1.8;">Implemented Document Intelligence with RPA bot
+                            triggering for automated backend task processing.</p>
+                        <div class="mt-3">
+                            <span class="project-tag">RPA</span>
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">Document Intelligence</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-5" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My Professional Journey</p>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Jan 2025 - Present</div>
+                            <h3>ServiceNow Developer</h3>
+                            <h4>FeOS Technologies</h4>
+                            <p style="color: #b0b0b0; line-height: 1.8;">
+                                Working on enterprise-level ServiceNow implementations across ITSM, CSM, and SecOps
+                                modules. Delivered multiple successful projects for clients including Wells Fargo,
+                                Starbucks, and City Union Bank. Specialized in integrations, automation, and AI-powered
+                                solutions.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - 2026</div>
+                            <h3>Master Of Computer Applications (MCA)</h3>
+                            <h4>Anna University - Center of Distance Education, Chennai</h4>
+                            <p style="color: #b0b0b0; line-height: 1.8;">
+                                Pursuing advanced studies in computer applications with focus on cloud computing,
+                                enterprise systems, and software engineering.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2023</div>
+                            <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
+                            <h4>SRM Institute of Science and Technology, Ramapuram</h4>
+                            <p style="color: #b0b0b0; line-height: 1.8;">
+                                Graduated with strong foundation in programming, databases, and software development.
+                                Active participant in technical workshops and coding competitions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-5" id="certifications">
+        <div class="container">
+            <h3 class="section-title" data-aos="fade-up">Certifications</h3>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Professional Credentials & Expertise</p>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-card">
+
+                        <div class="cert-image-frame" data-bs-toggle="modal" data-bs-target="#certModal1">
+                            <img src="/CSA.png"
+                                alt="ServiceNow CSA Certificate" class="img-fluid cert-img">
+                            <div class="view-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+                        </div>
+
+                        <h3>ServiceNow Certified System Administrator</h3>
+                        <p>Issued: March 2025</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-card">
+
+                        <div class="cert-image-frame" data-bs-toggle="modal" data-bs-target="#certModal2">
+                            <img src="/Flow Designer.png"
+                                alt="Flow Designer Micro-Certification" class="img-fluid cert-img">
+                            <div class="view-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+                        </div>
+
+                        <h3>ServiceNow Micro-Certification: Flow Designer</h3>
+                        <p>Completed: April 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="certModal1Label">ServiceNow CSA Certificate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="/CSA.png" class="img-fluid" alt="Full size CSA Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certModal2" tabindex="-1" aria-labelledby="certModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content modal-custom-bg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="certModal2Label">Flow Designer Micro-Certification</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="/Flow Designer.png" class="img-fluid" alt="Full size Flow Designer Micro-Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Let's Build Something Amazing Together
+            </p>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-form">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label">Your Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Your message here..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-custom-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="mailto:rajeshofficial1002@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajeshkanna1002/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="tel:+919025755673" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rajesh Kanna V. All Rights Reserved. | ServiceNow Developer | Chennai, India</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
