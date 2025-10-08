@@ -122,8 +122,8 @@ body {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     background: rgba(0, 0, 0, 0.95);
     border: 3px solid var(--servicenow-green);
     border-radius: 50%;
@@ -139,13 +139,10 @@ body {
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
+    0%, 100% {
         box-shadow: 0 8px 40px rgba(98, 216, 78, 0.6),
             inset 0 0 20px rgba(98, 216, 78, 0.1);
     }
-
     50% {
         box-shadow: 0 8px 60px rgba(98, 216, 78, 0.9),
             inset 0 0 30px rgba(98, 216, 78, 0.2);
@@ -158,30 +155,41 @@ body {
 }
 
 .engagement-text {
-    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 1.5rem;
     font-weight: 900;
     color: var(--servicenow-green);
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 15px rgba(98, 216, 78, 0.8);
-    z-index: 1;
+    z-index: 2;
+    margin: 0;
 }
 
 .engagement-label {
-    font-size: 0.7rem;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    z-index: 1;
+    letter-spacing: 1.2px;
+    z-index: 2;
+    white-space: nowrap;
 }
 
 .engagement-circle {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 95px;
+    height: 95px;
 }
-
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
