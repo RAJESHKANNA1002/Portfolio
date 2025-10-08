@@ -198,7 +198,7 @@ if (statsDashboard) {
 
 // Form Submission Handler
 (function () {
-    emailjs.init("OKuR8aHc7DFdHJWPc"); // ✅ Replace with your EmailJS public key
+    emailjs.init("OKuR8aHc7DFdHJWPc");
 })();
 
 const contactForm = document.querySelector('.contact-form form');
@@ -210,6 +210,17 @@ if (contactForm) {
         const email = this.querySelector('input[type="email"]').value.trim();
         const message = this.querySelector('textarea').value.trim();
 
+        // Get current time
+        const now = new Date();
+        const timeString = now.toLocaleString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true
+        });
+
         // Show loading popup
         Swal.fire({
             title: 'Sending...',
@@ -219,10 +230,13 @@ if (contactForm) {
                 Swal.showLoading();
             }
         });
+
         emailjs.send("service_x9enwg6", "template_spwnyz9", {
             from_name: name,
             from_email: email,
+            reply_to: email, // ✅ Set reply-to
             message: message,
+            time: timeString // ✅ Add timestamp
         })
             .then(() => {
                 Swal.fire({
@@ -231,11 +245,11 @@ if (contactForm) {
                     text: 'Thank you for reaching out, I will get back to you soon.',
                     confirmButtonColor: '#62d84e',
                     backdrop: `
-            rgba(0,0,0,0.4)
-            url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW1oOWt6Zjgwd2JiMXRqNXQyZDFoODl0bG8xcXo5NDUyejVzbnJ3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E8rJEUMGs9cyWEtNXT/giphy.gif")
-            center top
-            no-repeat
-          `
+                        rgba(0,0,0,0.4)
+                        url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW1oOWt6Zjgwd2JiMXRqNXQyZDFoODl0bG8xcXo5NDUyejVzbnJ3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E8rJEUMGs9cyWEtNXT/giphy.gif")
+                        center top
+                        no-repeat
+                    `
                 });
                 this.reset();
             })
