@@ -232,7 +232,7 @@ if (contactForm) {
                     confirmButtonColor: '#62d84e',
                     backdrop: `
             rgba(0,0,0,0.4)
-            url("https://media.giphy.com/media/111ebonMs90YLu/giphy.gif")
+            url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW1oOWt6Zjgwd2JiMXRqNXQyZDFoODl0bG8xcXo5NDUyejVzbnJ3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E8rJEUMGs9cyWEtNXT/giphy.gif")
             center top
             no-repeat
           `
